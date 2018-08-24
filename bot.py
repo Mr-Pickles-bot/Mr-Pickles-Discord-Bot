@@ -155,7 +155,21 @@ async def shutdown(ctx):
     await bot.say(embed=embed)
     await bot.logout()
 
+@bot.command()
+async def vaccum():
+    await bot.say("*naughty things to Grandpa's vaccum*")
 
+@bot.command(hidden=True)
+async def secret():
+    await bot.say("Stop scanning for commands. FFS.")
+
+@bot.command(pass_context=True, hidden=True)
+async def authors():
+    await bot.say("<@222526329109741568> and <@252084047264743428> are my creators. ")
+
+@bot.command(hidden=True)
+async def lemmefuck():
+    await bot.say("Cooters with Wings")
 
 
 bot.run('')  # Where 'TOKEN' is your bot token
