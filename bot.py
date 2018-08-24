@@ -156,7 +156,8 @@ async def shutdown(ctx):
     await bot.say(embed=embed)
     await bot.logout()
 
-@bot.command()
+
+@bot.command(hidden=True)
 async def vaccum():
     await bot.say("*naughty things to Grandpa's vaccum*")
 
@@ -171,6 +172,10 @@ async def authors():
 @bot.command(hidden=True)
 async def lemmefuck():
     await bot.say("Cooters with Wings")
+
+@bot.command()
+async def vaccumgif():
+    await bot.say("https://lh4.googleusercontent.com/-3PqHxlkQcXg/VE7XszJKUpI/AAAAAAAAAMg/3vOnHgjKMLQ/w500-h307/tumblr_ndsgyr7Hs51tmpaf1o1_500.gif")
 
 
 bot.run('')  # Where 'TOKEN' is your bot token
