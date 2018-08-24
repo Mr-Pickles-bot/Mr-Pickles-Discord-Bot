@@ -143,7 +143,7 @@ async def info():
     embed.add_field(name=":information_source: Version", value=(version), inline=True)
     embed.add_field(name=":busts_in_silhouette: Developers", value="**MZFX18#0069 & JoshTheGamer632#0017**", inline=True)
     embed.add_field(name="<:github:425761614441218048> GitHub", value="https://github.com/MarionStationFM-Productions/mr-pickles-bot", inline=True)
-    embed.add_field(name="Need Support?", value="https://discord.gg/jqDH5wZ", inline=True)
+    embed.add_field(name="<:kingwumpus:425762228667416625> Need Support?", value="https://discord.gg/jqDH5wZ", inline=True)
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True, hidden=True)
