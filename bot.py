@@ -8,7 +8,7 @@ import os
 from random import choice, randint
 
 owner = ["222526329109741568"]
-version = "Ver. 0.0.1"
+version = "Ver. 0.1.29.2"
 
 bot = commands.Bot(command_prefix='p!', description=" <:mrpickles:480552232165572608> I'm that demonic border collie from that television show.")
 
