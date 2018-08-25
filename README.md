@@ -4,6 +4,7 @@ A work-in-progress Discord Bot made in Python by JoshTheGamer and MazariFox.
 :mrpickles: I'm that demonic border collie from that television show.
 
 ​No Category:
+
   `invite `    Bot Invite
   
  ` help `      Shows this message.
