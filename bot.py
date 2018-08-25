@@ -6,6 +6,7 @@ from datetime import timedelta
 import traceback
 import os
 from random import choice, randint
+from config import token
 
 owner = ["222526329109741568", "252084047264743428"]
 version = "Ver. 0.1.29.2"
@@ -177,5 +178,10 @@ async def lemmefuck():
 async def vaccumgif():
     await bot.say("https://lh4.googleusercontent.com/-3PqHxlkQcXg/VE7XszJKUpI/AAAAAAAAAMg/3vOnHgjKMLQ/w500-h307/tumblr_ndsgyr7Hs51tmpaf1o1_500.gif")
 
+@bot.command()
+async def settoken():
+    await bot.say("swear to fuck man.")
 
-bot.run('')  # Where 'TOKEN' is your bot token
+
+
+bot.run(token)  # Where 'TOKEN' is your bot token
