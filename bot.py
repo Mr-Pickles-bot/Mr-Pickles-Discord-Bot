@@ -11,7 +11,7 @@ from config import token
 owner = ["222526329109741568", "252084047264743428"]
 version = "Ver. 0.1.29.3"
 
-bot = commands.Bot(command_prefix='p!', description=" <:mrpickles:480552232165572608> I'm that demonic border collie from that television show.")
+bot = commands.Bot(command_prefix='p!', description=" I'm that demonic border collie from that television show.")
 
 @bot.event
 async def on_ready():
