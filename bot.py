@@ -32,6 +32,7 @@ async def on_ready():
 @bot.command(pass_context=True, hidden=True)
 async def setgame(ctx, *, game):
     if ctx.message.author.id not in owner:
+        print('Someone not set as bot owner attempted to setgame')
         return
     game = game.strip()
     if game != "":
@@ -43,12 +44,14 @@ async def setgame(ctx, *, game):
         else:
             embed=discord.Embed(title="Success!", description="Game changed.", color=0xfb0006)
             await bot.say(embed=embed)
+            print('game changed by dev.')
     else:
         await bot.send_cmd_help(ctx)
 
 @bot.command(pass_context=True, hidden=True)
 async def setname(ctx, *, name):
     if ctx.message.author.id not in owner:
+        print('Someone not set as bot owner attempted to setname')
         return
     name = name.strip()
     if name != "":
@@ -60,6 +63,7 @@ async def setname(ctx, *, name):
         else:
             embed=discord.Embed(title="Success!", description="Name changed.", color=0xfb0006)
             await bot.say(embed=embed)
+            print('Name changed by dev.')
     else:
         await bot.send_cmd_help(ctx)
 
@@ -152,6 +156,7 @@ async def info():
 async def shutdown(ctx):
     if ctx.message.author.id not in owner:
         await bot.say("Naughty you...")
+        print('someone attempted shutdown')
         return
     embed=discord.Embed(title="Back to my lair I go...", color=0xfb0006)
     await bot.say(embed=embed)
@@ -161,10 +166,12 @@ async def shutdown(ctx):
 @bot.command(hidden=True)
 async def vaccum():
     await bot.say("*naughty things to Grandpa's vaccum*")
+    print('vaccum used')
 
 @bot.command(hidden=True)
 async def secret():
     await bot.say("Stop scanning for commands. FFS.")
+    print('command secret used')
 
 @bot.command(pass_context=True, hidden=True)
 async def authors():
@@ -181,7 +188,11 @@ async def vaccumgif():
 @bot.command()
 async def settoken():
     await bot.say("swear to fuck man.")
+    print('settoken used by someone')
 
+@bot.command(hidden=True)
+async def ban():
+    await bot.say('Sometimes, it is best to just not try these commands, especially when they aren\'t implemented yet.')
 
 
 bot.run(token)  # Where 'TOKEN' is your bot token
