@@ -9,9 +9,9 @@ from random import choice, randint
 from config import token
 
 owner = ["222526329109741568", "252084047264743428"]
-version = "Ver. 0.1.29.2"
+version = "Ver. 0.1.29.3"
 
-bot = commands.Bot(command_prefix='p!', description=" <:mrpickles:480552232165572608> I'm that demonic border collie from that television show.")
+bot = commands.Bot(command_prefix='p!', description=" I'm that demonic border collie from that television show.")
 
 @bot.event
 async def on_ready():
@@ -149,6 +149,7 @@ async def info():
     embed.add_field(name=":busts_in_silhouette: Developers", value="**MZFX18#0069 & JoshTheGamer632#0017**", inline=True)
     embed.add_field(name="<:github:425761614441218048> GitHub", value="https://github.com/Mr-Pickles-bot/Mr.-Pickles-Discord-Bot", inline=True)
     embed.add_field(name="<:kingwumpus:425762228667416625> Need Support?", value="https://discord.gg/jqDH5wZ", inline=True)
+    embed.add_field(name=":link: Invite the bot", value:"https://bot.discord.io/mrpickles", inline=True)
     embed.set_footer(text="That was info about my vaccum cleaner.")
     await bot.say(embed=embed)
 
